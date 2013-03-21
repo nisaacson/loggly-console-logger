@@ -27,7 +27,7 @@ var transports = [
   new (winston.transports.Console)({
     level: 'debug',
     levels: customLevels.levels,
-    handleExceptions: true,
+    handleExceptions: handleExceptions,
     prettyPrint: true,
     colorize: true
   })
@@ -39,7 +39,7 @@ if (config.get('loggly')) {
   transports.push(new winston.transports.Loggly({
     subdomain: 'nisaacson',
     inputToken: loggly.inputToken,
-    handleExceptions: true,
+    handleExceptions: handleExceptions,
     level: 'info',
     prettyPrint: true,
     json: true

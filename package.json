@@ -1,6 +1,6 @@
 {
   "name": "loggly-console-logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Winston-based logger that outputs to the console and loggly if the loggly input token is set in the nconf object",
   "main": "index.js",
   "scripts": {
