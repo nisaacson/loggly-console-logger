@@ -18,6 +18,10 @@ var customLevels = {
   }
 }
 
+var handleExceptions = true
+if (config.get('test')) {
+  handleExceptions = false
+}
 var transports = [
   // setup console logging
   new (winston.transports.Console)({
