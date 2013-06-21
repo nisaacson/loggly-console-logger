@@ -18,7 +18,7 @@
     "mocha": "~1.8.2"
   },
   "dependencies": {
-    "winston": "~0.6.2",
+    "winston": "~0.7.2",
     "winston-loggly": "~0.6.0"
   },
   "gitHead": "e422a3b6ecffd7b30ca27b15239a9f4b0498a52e",
