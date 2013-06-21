@@ -52,7 +52,7 @@ if (config.get('loggly')) {
 var logger = module.exports = new (winston.Logger)({
   level: 'debug',
   levels: customLevels.levels,
-  handleExceptions: true,
+  handleExceptions: handleExceptions,
   transports: transports,
   colors: customLevels.colors
 })
