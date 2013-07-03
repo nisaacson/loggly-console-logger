@@ -36,9 +36,9 @@ var transports = [
 
 
 // setup logging to loggly
-if (config.get('loggly')) {
+if (loggly && loggly.inputToken && loggly.subdomain) {
   transports.push(new winston.transports.Loggly({
-    subdomain: 'nisaacson',
+    subdomain: loggly.subdomain,
     inputToken: loggly.inputToken,
     handleExceptions: handleExceptions,
     level: 'info',

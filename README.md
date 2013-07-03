@@ -8,13 +8,14 @@ npm install -S loggly-console-logger
 
 # Usage
 
-To use send your logs to loggly, you must first specify your input token in the nconf object.  Only logs with the level `info` and higher will be sent to loggly. `debug` level logging statements are only logged to the console
+To use send your logs to loggly, you must first specify your `inputToken` and `subdomain` in the nconf object.  Only logs with the level `info` and higher will be sent to loggly. `debug` level logging statements are only logged to the console
 
 
 ```javascript
 var nconf = require('nconf').argv().env().defaults({
   loggly: {
-    inputToken: 'foo-loggly-input-token-here'
+    inputToken: 'foo-loggly-input-token-here',
+    subdomain: 'foo'
   }
 })
 
