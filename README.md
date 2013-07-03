@@ -1,4 +1,9 @@
+# Loggly Console Logger
+
+[![Dependency Status](https://david-dm.org/nisaacson/loggly-console-logger.png)](https://david-dm.org/nisaacson/loggly-console-logger)
+
 Winston-based logger that outputs to the console and loggly if the loggly input token is set in the nconf object
+
 
 # Installation
 
@@ -8,7 +13,7 @@ npm install -S loggly-console-logger
 
 # Usage
 
-To use send your logs to loggly, you must first specify your `inputToken` and `subdomain` in the nconf object.  Only logs with the level `info` and higher will be sent to loggly. `debug` level logging statements are only logged to the console
+To use send your logs to loggly, you must first specify your `inputToken` and `subdomain` in the nconf object.  Only logs with the level `info` and higher will be sent to loggly. Any `debug` level logging statements are only logged to the console
 
 
 ```javascript
